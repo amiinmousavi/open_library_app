@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.options.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small"
+
+            android:layout_margin="@dimen/small"
+            android:paddingStart="@dimen/xxx_small"
+            android:paddingEnd="@dimen/xxx_small"
+            android:textSize="@dimen/regular_text_size"
+
+            android:text="Preferences"
+            android:textAllCaps="true"
+            android:textColor="@color/light_grey"
+            android:background="@drawable/radius_on_borders_lighter_grey"
+
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgViewDarkMode"
+            android:layout_width="@dimen/xx_small"
+            android:layout_height="@dimen/xx_small"
+            android:layout_marginStart="@dimen/xxx_small"
+            android:layout_marginTop="@dimen/x_small"
+            android:src="@drawable/dark_mode"
+            app:layout_constraintStart_toStartOf="@id/txtPreferences"
+            app:layout_constraintTop_toBottomOf="@id/txtPreferences" />
+
+        <TextView
+            android:id="@+id/txtDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small"
+            android:layout_marginTop="@dimen/x_small"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/xx_small"
+            android:text="Dark Mode"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/imgViewDarkMode"
+            app:layout_constraintStart_toEndOf="@id/imgViewDarkMode"
+            app:layout_constraintTop_toBottomOf="@id/txtPreferences" />
+
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small"
+            android:layout_marginTop="@dimen/x_small"
+            app:layout_constraintBottom_toBottomOf="@id/txtDarkMode"
+            app:layout_constraintEnd_toEndOf="@+id/txtPreferences"
+            app:layout_constraintTop_toBottomOf="@id/txtPreferences"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

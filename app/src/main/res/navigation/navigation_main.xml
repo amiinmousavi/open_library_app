@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.libraryappmousavi.screens.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_libraryActivity"
+            app:destination="@id/libraryActivity"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.libraryappmousavi.screens.options.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.libraryappmousavi.screens.options.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <activity
+        android:id="@+id/libraryActivity"
+        android:name="com.example.libraryappmousavi.LibraryActivity"
+        android:label="activity_library"
+        tools:layout="@layout/activity_library" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.libraryappmousavi.screens.favorites.FavoritesFragment"
+        android:label="FavoritesFragment" />
+</navigation>

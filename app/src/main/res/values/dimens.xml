@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="itsy_bitsy">2.5dp</dimen>
+    <dimen name="miniscule">5dp</dimen>
+    <dimen name="insignificant">7.5dp</dimen>
+    <dimen name="xxx_small">10dp</dimen>
+    <dimen name="xx_small">20dp</dimen>
+    <dimen name="x_small">25dp</dimen>
+    <dimen name="small">30dp</dimen>
+    <dimen name="medium">40dp</dimen>
+    <dimen name="large">50dp</dimen>
+    <dimen name="x_large">60dp</dimen>
+    <dimen name="xx_large">70dp</dimen>
+    <dimen name="xxx_large">80dp</dimen>
+    <dimen name="enormous">120dp</dimen>
+    <dimen name="x_enormous">145dp</dimen>
+    <dimen name="xx_enormous">175</dimen>
+    <dimen name="xxx_enormous">290</dimen>
+    <dimen name="immense">320dp</dimen>
+    <dimen name="x_immense">340dp</dimen>
+    <dimen name="xx_immense">350dp</dimen>
+    <dimen name="xxx_immense">370dp</dimen>
+
+<!--    Font sizes-->
+    <dimen name="error_text_size">12sp</dimen>
+
+    <dimen name="regular_text_size">14sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="x_large_text_size">22sp</dimen>
+</resources>

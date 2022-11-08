@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.books.BooksFragment">
+
+    <data>
+
+        <variable
+            name="bookViewModel"
+            type="com.example.libraryappmousavi.screens.books.BookViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/booksFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnBooks"
+            style="@style/medium_button"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_on_corners_diamond_white"
+            android:text="Books"
+            app:layout_constraintEnd_toStartOf="@+id/btn_authors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_authors"
+            style="@style/medium_button"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_on_borders_lighter_grey"
+            android:onClick="@{() -> bookViewModel.btnNavigateToAuthorClicked()}"
+            android:text="Authors"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBooks"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/booksSearchView"
+            style="@style/large_search_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_authors" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

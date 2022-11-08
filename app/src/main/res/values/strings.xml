@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Open Library</string>
+    <string name="descriptionPictureBooks">A picture of a bunch of books.</string>
+    <string name="str_go_to_library">Go to library</string>
+    <string name="txtMenuItemHelp">Help</string>
+    <string name="txtMenuItemSettings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

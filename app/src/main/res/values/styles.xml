@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="medium_button" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/x_enormous</item>
+        <item name="android:layout_height">@dimen/medium</item>
+        <item name="android:elevation">20dp</item>
+    </style>
+
+    <style name="large_search_bar">
+        <item name="android:layout_width">355dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/radius_on_corners_diamond_white</item>
+        <item name="android:elevation">31dp</item>
+    </style>
+
+    <style name="card_list_element_layout">
+        <item name="android:layout_width">@dimen/xx_immense</item>
+        <item name="android:layout_height">@dimen/x_enormous</item>
+        <item name="android:layout_marginTop">@dimen/xx_small</item>
+        <item name="cardCornerRadius">@dimen/miniscule</item>
+        <item name="cardElevation">@dimen/xx_small</item>
+
+    </style>
+    <style name="book_preview_wrapper_layout" parent="match_parent_layout">
+        <item name="android:layout_marginEnd">@dimen/xx_small</item>
+        <item name="android:layout_marginStart">@dimen/xx_small</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="author_name_on_cardview" parent="wrap_content_layout">
+        <item name="android:layout_marginStart">@dimen/xx_small</item>
+        <item name="android:layout_marginTop">@dimen/miniscule</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="title_book_on_cardview" parent="wrap_content_layout">
+        <item name="android:layout_marginStart">@dimen/xx_small</item>
+        <item name="android:layout_marginTop">@dimen/miniscule</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="bottom_left_icon_on_cardview">
+        <item name="android:layout_width">@dimen/xx_small</item>
+        <item name="android:layout_height">@dimen/xx_small</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/xx_small</item>
+    </style>
+
+    <style name="whiteBorderButton">
+        <item name="android:background">@drawable/btn_go_to_library</item>
+        <item name="android:paddingStart">@dimen/xxx_small</item>
+        <item name="android:paddingEnd">@dimen/xxx_small</item>
+        <item name="android:textColor">@color/diamond_white</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="roundImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/miniscule</item>
+        <item name="color">@color/diamond_white</item>
+    </style>
+
+    <style name="wrap_content_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="match_parent_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>

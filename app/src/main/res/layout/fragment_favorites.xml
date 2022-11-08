@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FavoritesFragment">
+
+    <data>
+
+        <variable
+            name="favoritesViewModel"
+            type="com.example.libraryappmousavi.screens.favorites.FavoritesViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_book_1"
+            style="@style/card_list_element_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/wrapper_book_1"
+                style="@style/book_preview_wrapper_layout">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_cover_book_1"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/theintelligentinvestor" />
+
+                <TextView
+                    android:id="@+id/title_book_1"
+                    style="@style/title_book_on_cardview"
+                    android:layout_toEndOf="@id/img_cover_book_1"
+                    android:text="The Intelligent Investor" />
+
+                <TextView
+                    android:id="@+id/author_book_1"
+                    style="@style/author_name_on_cardview"
+                    android:layout_below="@id/title_book_1"
+                    android:layout_toEndOf="@id/img_cover_book_1"
+                    android:text="Benjamin Grahim" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/bottom_left_icon_on_cardview"
+                    android:src="@drawable/checked" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
